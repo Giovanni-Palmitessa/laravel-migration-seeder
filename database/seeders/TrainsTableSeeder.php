@@ -25,8 +25,8 @@ class TrainsTableSeeder extends Seeder
                 'arrival_time' => $faker->time(),
                 'train_code' => $faker->bothify('??-########'),
                 'coaches' => rand(1, 20),
-                'company' => $faker->word(),
-                'company' => $faker->word(),
+                'is_in_time' => $faker->boolean(),
+                'is_cancelled' => $faker->boolean(),
             ]);
         }
     }
