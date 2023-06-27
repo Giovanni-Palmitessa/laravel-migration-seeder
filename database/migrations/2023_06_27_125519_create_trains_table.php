@@ -20,6 +20,7 @@ return new class extends Migration
             $table->string('arrival_railway_station', 40);
             $table->smallInteger('departure_time');
             $table->smallInteger('arrival_time');
+            $table->char('train_code', 11);
             $table->timestamps();
         });
     }
