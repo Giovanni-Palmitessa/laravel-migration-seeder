@@ -33,8 +33,8 @@
                   <td>{{ $train->arrival_time }}</td>
                   <td>{{ $train->train_code }}</td>
                   <td>{{ $train->coaches }}</td>
-                  <td>{{ $train->is_in_time }}</td>
-                  <td>{{ $train->is_cancelled }}</td>                  
+                  <td>{{ $train->is_in_time ? 'SI' : 'NO'}}</td>
+                  <td>{{ $train->is_cancelled ? 'SI' : 'NO'}}</td>                  
                 </tr>
                 @endforeach
             </tbody>
