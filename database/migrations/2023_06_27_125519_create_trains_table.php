@@ -21,6 +21,9 @@ return new class extends Migration
             $table->smallInteger('departure_time');
             $table->smallInteger('arrival_time');
             $table->char('train_code', 11);
+            $table->tinyInteger('coaches');
+            $table->boolean('is_in_time');
+            $table->boolean('is_cancelled');
             $table->timestamps();
         });
     }
