@@ -19,6 +19,12 @@ class TrainsTableSeeder extends Seeder
         for ($i = 0; $i < 50; $i++) {
             Train::create([
                 'company' => $faker->word(),
+                'departure_railway_station' => $faker->words(3, true),
+                'company' => $faker->word(),
+                'company' => $faker->word(),
+                'company' => $faker->word(),
+                'company' => $faker->word(),
+                'company' => $faker->word(),
             ]);
         }
     }
