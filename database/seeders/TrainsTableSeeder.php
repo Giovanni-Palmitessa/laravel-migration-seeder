@@ -21,8 +21,8 @@ class TrainsTableSeeder extends Seeder
                 'company' => $faker->word(),
                 'departure_railway_station' => $faker->words(3, true),
                 'arrival_railway_station' => $faker->words(3, true),
-                'company' => $faker->word(),
-                'company' => $faker->word(),
+                'departure_time' => $faker->time(),
+                'arrival_time' => $faker->time(),
                 'company' => $faker->word(),
                 'company' => $faker->word(),
             ]);
