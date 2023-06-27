@@ -28,8 +28,13 @@
                 <tr>
                   <th scope="row">{{ $train->company }}</th>
                   <td>{{ $train->departure_railway_station }}</td>
-                  <td>Otto</td>
-                  <td>@mdo</td>
+                  <td>{{ $train->arrival_railway_station }}</td>
+                  <td>{{ $train->departure_time }}</td>
+                  <td>{{ $train->arrival_time }}</td>
+                  <td>{{ $train->train_code }}</td>
+                  <td>{{ $train->coaches }}</td>
+                  <td>{{ $train->is_in_time }}</td>
+                  <td>{{ $train->is_cancelled }}</td>                  
                 </tr>
                 @endforeach
             </tbody>
