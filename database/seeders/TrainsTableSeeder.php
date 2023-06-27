@@ -23,7 +23,7 @@ class TrainsTableSeeder extends Seeder
                 'arrival_railway_station' => $faker->words(3, true),
                 'departure_time' => $faker->time(),
                 'arrival_time' => $faker->time(),
-                'company' => $faker->word(),
+                'train_code' => $faker->bothify('??-########'),
                 'company' => $faker->word(),
             ]);
         }
